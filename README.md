@@ -5,7 +5,7 @@ Offensive Security does a fantastic job at explaining the process at a quality y
 
 Before I went through the PWK course, I went through every BOF article, video and machines I could find to keep everything fresh, but I went a bit overboard. To help simplify the process, before I started the PWK course, I wrote myself a detailed guide from beginning to end so that when I get to the course, I would have the foundations solidified by the time I stepped into the course.
 
-It is my hope that if you're looking to start your journey into OSCP that you will find this helpful. 
+It is my hope that if you're looking to start your journey into OSCP that you will find this helpful. In a nutshell, what we want to accomplish is to crash the application, inject our code and instruct it to execute our shellcode. Simple right? Let’s go! 
 
 ## Steps:
 1. Crash The Application
