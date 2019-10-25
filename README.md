@@ -1,11 +1,11 @@
-# A precursor into PWK buffer overflows
+# Don't let buffer overflows overflow your mind
 A common hesitation when stepping into the Penetration Testing with Kali (PWK) course is the section on buffer overflow (BOF) exploits. This course does not expect you to do any advanced exploit writing, but does teach and sets the expectation that you'll understand the basics by the time you sit for the exam and if you're coming into this green, then you may feel a bit intimidated.
 
 Offensive Security does a fantastic job at explaining the process at a quality you will not find anywhere else, but I would recommend getting your feet wet before you commit and purchase your lab time. 
 
-Before I went through the PWK course, I went through every BOF article, video and machines I could find to keep everything fresh, but I went a bit overboard. To help simplify the process, before I started the PWK course, I wrote myself a detailed guide from beginning to end so that when I get to the course, I would have the foundations solidified by the time I stepped into the course.
+Before I went through the PWK course, I went through every BOF article, video and related CTF machine I could find to keep everything fresh, but I went a bit overboard. To help simplify the process, before I started the PWK course, I wrote myself a detailed guide from beginning to end so that when I get to the course, I would have the foundations solidified by the time I stepped into the course.
 
-It is my hope that if you're looking to start your journey into OSCP that you will find this helpful. In a nutshell, what we want to accomplish is to crash the application, inject our code and instruct it to execute our shellcode. Simple right? Let’s go! 
+It is my hope that if you're looking to start your journey into OSCP that you will find this helpful as it helped me. In a nutshell, what we want to accomplish is to crash the application, inject our code and instruct it to execute our shellcode. Simple right? Let’s go!
 
 ## Steps:
 1. Crash The Application
