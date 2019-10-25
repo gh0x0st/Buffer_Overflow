@@ -1,7 +1,11 @@
 # Buffer Overflow - A Pre-OSCP BOF Prep Guide
-A common python solution for the process of crafting buffer overflow exploits. These scripts and notes are specifically catered for the buffer overflow solution for brainpan. I wrote this guide to prepare myself for OSCP and hope that someone else will be able to utilize it for their studies as well.
+A common hesitation when stepping into the Penetration Testing with Kali (PWK) course is the section on buffer overflow (BOF) exploits. This course does not expect you to do any advanced exploit writing, but does teach and sets the expectation that you'll understand the basics by the time you sit for the exam and if you're coming into this green, then you may feel a bit intimidated.
 
-In a nutshell, what we want to accomplish is to crash the application, instruct it to go to the JMP ESP and execute our shellcode. Simple right? Let’s go! 
+Offensive Security does a fantastic job at explaining the process at a quality you will not find anywhere else, but I would recommend getting your feet wet before you commit and purchase your lab time. 
+
+Before I went through the PWK course, I went through every BOF article, video and machines I could find to keep everything fresh, but I went a bit overboard. To help simplify the process, before I started the PWK course, I wrote myself a detailed guide from beginning to end so that when I get to the course, I would have the foundations solidified by the time I stepped into the course.
+
+It is my hope that if you're looking to start your journey into OSCP that you will find this helpful. 
 
 ## Steps:
 1. Crash The Application
