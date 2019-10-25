@@ -104,10 +104,10 @@ finally:
 	s.close()
 ```
 
-Send that payload to the application, make sure it crashed and grab the EIP value in the debugger. For this application, it will be 35724134. We will now use a second script from Metasploit called pattern_offset.rb. We'll use the value from EIP against this script to determine the exact offset which will be the exact number of bytes needed to fill the buffer.
+Send that payload to the application, make sure it crashed and grab the EIP value in the debugger. For this application, it will be 35724134. We will now use a second script from Metasploit called pattern_offset.rb. What this script will do is take that value and seeing exactly where it exists in the buffer length we designate, showing us the point where the buffer will crash. 
 
 ```
-root@gh0x0st:~# /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 35724134
+root@gh0x0st:~# /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 35724134 -l 600
 [*] Exact match at offset 524
 ```
 
@@ -196,6 +196,10 @@ finally:
 ~~~
 
 During this check, I like to add a string that you can easily recognize so you know you're at the end of the buffer or else you might find yourself scrolling for days if you're not familiar with this step. One thing to note, is that \x00 will always a be a bad character and will have to be excluded but it's a good habit to keep it there for your first run so you force yourself to check for all possible bad characters.
+
+One piece to note is that \x0a (line feed) and \x0d (carriage return) are considered a best practice to treat as bad characters, even if they don't break the chain. Sometimes everything will work even if you don't exclude them, but it will not hurt you to exclude them along with \x00 so long as you have enough good characters to generate your shellcode. 
+
+_If you designate an encoder and you happen to get a message saying there is no compatible encoder, remove that parameter from your command all together and msfvenom will look for all compatible encoders for you._
 
 ![Alt text](https://github.com/gh0x0st/Buffer_Overflow/blob/master/Screenshots/step4_bad_char_null.png?raw=true "bad characters")
 
