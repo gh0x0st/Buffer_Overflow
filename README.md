@@ -1,4 +1,4 @@
-# Buffer Overflow - A Pre-OSCP BOF Prep Guide
+# A precursor into PWK buffer overflows
 A common hesitation when stepping into the Penetration Testing with Kali (PWK) course is the section on buffer overflow (BOF) exploits. This course does not expect you to do any advanced exploit writing, but does teach and sets the expectation that you'll understand the basics by the time you sit for the exam and if you're coming into this green, then you may feel a bit intimidated.
 
 Offensive Security does a fantastic job at explaining the process at a quality you will not find anywhere else, but I would recommend getting your feet wet before you commit and purchase your lab time. 
