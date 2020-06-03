@@ -19,7 +19,7 @@ It is my hope that if you're looking to start your journey into OSCP that you wi
 ## Definitions:
 1. EIP - The Extended Instruction Pointer (EIP) is a register that contains the address of the next instruction for the program or command.
 2. ESP – The Extended Stack Pointer (ESP) is a register that lets you know where on the stack you are and allows you to push data in and out of the application.
-3. JMP – The Jump (JMP) is a register that performs an unconditional jump to transfer the flow of execution by changing the EIP register.
+3. JMP – The Jump (JMP) is an instruction that modifies the flow of execution where the operand you designate will contain the address being jumped to.
 4. \x41, \x42, \x43 - The hexadecimal values for A, B and C. For this exercise, there is no benefit to using hex vs ascii, it's just my personal preference.
 
 ## Prerequisites:
